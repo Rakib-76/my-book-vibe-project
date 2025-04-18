@@ -6,8 +6,8 @@ import { Link } from 'react-router';
 
 // const Book = ({bookPromise}) => {
 const Book = ({ singleBook }) => {
-    console.log(singleBook);
-    const { bookName, bookId ,author, image, rating, category ,tags} = singleBook;
+    // console.log(singleBook);
+    const { bookName, bookId,totalPages ,author, image, rating, category ,tags} = singleBook;
     // const data = use(bookPromise);
 
 
@@ -26,6 +26,7 @@ const Book = ({ singleBook }) => {
       <div className="p-4 mb-3">
           <h2 className="card-title">{bookName}</h2>
           <p>Author:{author}</p>
+          <p>Total Page :{totalPages}</p>
       </div>
       <div className='border-1 border-dashed'></div>
           <div className='flex justify-between mx-4'>
